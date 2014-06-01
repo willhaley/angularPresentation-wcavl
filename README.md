@@ -1,6 +1,8 @@
-# [Roots Theme](http://roots.io/)
+# [ Customize / Hacked Roots Theme](http://roots.io/)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+Everything below here is awesome information, but is specific to the roots theme and is still really useful information so I'm leaving it in.
 
 Roots is a WordPress starter theme based on [HTML5 Boilerplate](http://html5boilerplate.com/) & [Bootstrap](http://getbootstrap.com/) that will help you make better themes.
 
