@@ -1,0 +1,236 @@
+/*!
+ * Roots 6.5.2
+ */
+
+$bootstrap-sass-asset-helper: false;
+@import "bootstrap/bootstrap";
+
+$theme_url: '/wp-content/themes/angularPresentation';
+$theme_img_url: $theme_url + '/assets/img/';
+
+$dark-blue: #222A35;
+$light-grey: #83818C;
+$white: #FEFEFD;
+$blue: #262F40;
+$grey: #37383D;
+
+body {
+	background-color: $white;
+	margin-top: 40px;
+}
+body.home {
+	margin-top: 0;
+}
+
+h1{
+	color: $light-grey;
+	margin: 0;
+	padding: 0;
+}
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+.home-outer {
+	min-width: 720px;
+	width: 100%;
+	height: 640px;
+	margin: 0;
+	padding: 0;
+	background-image: url($theme_img_url + 'fishing.jpg');
+	background-repeat: no-repeat;
+	background-position-y: -145px;
+}
+
+.home-logo {
+	position: absolute;
+	top: 103px;
+	left: 150px;
+	cursor: pointer;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+
+body {
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content {
+
+	padding: 20px;
+
+	.item {
+		li {
+
+			-webkit-transition: margin 2s, border-radius 3s, -webkit-transform 2s;
+			transition: margin 2s, transform 2s, border-radius 3s;
+
+			display: inline-block;
+			list-style: none;
+			padding: 25px;
+			border-radius: 90px;
+			width: 175px;
+			height: 175px;
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 75px;
+
+			margin: 5%;
+
+			&:hover {
+				box-shadow: 0px 0px 5px #DADBCD inset;
+				cursor: pointer;
+			}
+
+			a {
+				color: #6F6F6A;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+
+		}
+	}
+}
+
+.the_bills__logo{
+	width: 250px;
+	height: 80px;
+}
+
+.padding-left-25{
+	padding-right: 25px;
+}
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main {
+	font-size: 20px;
+	padding: 0 30px;
+}
+
+/* Gallery Shortcode */
+.gallery-row {
+	padding: 15px 0;
+}
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar {
+}
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header {
+}
+
+.hentry time {
+}
+
+.hentry .byline {
+}
+
+.hentry .entry-content {
+}
+
+.hentry footer {
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info {
+	position: fixed;
+	bottom: 0px;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+figure.alignnone {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@import "partials/navigation";
+@import "partials/agenda";
+
+@media (min-width: $screen-sm-min) {
+
+	@include navigation-medium;
+}
+
+@media (min-width: $screen-md-min) {
+
+	.home-outer {
+		background-position-y: -83px;
+
+	}
+
+	.home-logo {
+		top: 172px;
+		left: 35%;
+	}
+
+}
+
+@media (min-width: $screen-lg-min) {
+
+	.home-outer {
+		height: 956px;
+		background-position-y: 0px;
+	}
+
+	.home-logo {
+		top: 253px;
+		left: 35%;
+	}
+
+}

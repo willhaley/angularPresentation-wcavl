@@ -1,0 +1,34 @@
+<div class="container" data-ng-app="calcDistance">
+    <div data-ng-controller="calcDistanceCtrl">
+    <div class="row result-section">
+        <div class="col-sm-6">
+            <div class="calculator-content">
+                <h2>How close are you to the Raleigh, NC?</h2>
+
+                <div class="directions">Enter your zip code below.</div>
+                <div class="form-group">
+                    <label>Zip Code: </label>
+                    <input
+                            x-webkit-speech
+                            class="form-control zip-code"
+                            data-ng-model="zipCode"
+                            data-ng-change="calculateDistance()"
+                            type="number"
+                            max="99999"
+                            />
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6" id="scrollToResults" data-ng-show="result">
+            <div class="results">
+                <div class="results-prefab">You are <span data-ng-bind="result"></span> miles from Raleigh, NC</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+        <script src="//maps.googleapis.com/maps/api/js?libraries=geometry&sensor=true"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
+        <script src="distanceCalc.js"></script>
